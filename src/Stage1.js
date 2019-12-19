@@ -30,7 +30,7 @@ export default withRouter((props) => {
                   <div 
                     className={index === 313 ? 'card-back-correct' : 'card-back'} 
                     onClick={index === 313 
-                      ? () => props.history.push('/youAreNotGoingToGuessTheseURLsBTW') 
+                      ? () => props.history.push('/ChristmasChallenge/youAreNotGoingToGuessTheseURLsBTW') 
                       : () => setFlippedValue(index, false)
                     }
                   >

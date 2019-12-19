@@ -36,7 +36,7 @@ export default withRouter((props) => {
       {time && 
         <>
           <p>Yeah... you've just screamed at the screen for 3 minutes for no reason</p>
-          <button className='continue-button' onClick={() => props.history.push('/betYouWishYouWroteThatDown')}>Continue...</button>
+          <button className='continue-button' onClick={() => props.history.push('/ChristmasChallenge/betYouWishYouWroteThatDown')}>Continue...</button>
         </>}
     </div>
   )

@@ -10,7 +10,7 @@ export default withRouter((props) => {
       <p>Welcome Human Being</p>
       <p>Click the button below to start.</p>
       <p>I hope you have a lot of time to spare...</p>
-      <button className='start-button' onClick={() => props.history.push('/stage1')}>Start</button>
+      <button className='start-button' onClick={() => props.history.push('/ChristmasChallenge/stage1')}>Start</button>
     </div>
   )
 })

@@ -9,7 +9,7 @@ export default withRouter((props) => {
 
   useEffect(() => {
     if(timerStarted) {
-      if (!timeLeft) props.history.push('/stage1')
+      if (!timeLeft) props.history.push('/ChristmasChallenge/stage1')
       const intervalId = setInterval(() => {
         setTimeLeft(timeLeft - 1);
       }, 1000);
@@ -19,7 +19,7 @@ export default withRouter((props) => {
 
   const checkPassword = () => {
     if(input === 'the 4 digits displayed on the green card in the first task') {
-      props.history.push('/hereIsThePasswordYouFilthyAnimal')
+      props.history.push('/ChristmasChallenge/hereIsThePasswordYouFilthyAnimal')
     } else {
       setIncorrect(true)
     }

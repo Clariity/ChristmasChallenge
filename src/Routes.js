@@ -15,12 +15,12 @@ import NotFound from "./NotFound";
 export default () => {
   return (
     <Switch>
-      <Route path="/" exact component={ Home } />
-      <Route path="/stage1" exact component={ Stage1 } />
-      <Route path="/youAreNotGoingToGuessTheseURLsBTW" exact component={ Stage2 } />
-      <Route path="/hoorayYouMadeItToTheFinalStageWellDone" exact component={ Stage3 } />
-      <Route path="/betYouWishYouWroteThatDown" exact component={ Stage4 } />
-      <Route path="/hereIsThePasswordYouFilthyAnimal" exact component={ StageEnd } />
+      <Route path="/ChristmasChallenge/" exact component={ Home } />
+      <Route path="/ChristmasChallenge/stage1" exact component={ Stage1 } />
+      <Route path="/ChristmasChallenge/youAreNotGoingToGuessTheseURLsBTW" exact component={ Stage2 } />
+      <Route path="/ChristmasChallenge/hoorayYouMadeItToTheFinalStageWellDone" exact component={ Stage3 } />
+      <Route path="/ChristmasChallenge/betYouWishYouWroteThatDown" exact component={ Stage4 } />
+      <Route path="/ChristmasChallenge/hereIsThePasswordYouFilthyAnimal" exact component={ StageEnd } />
       <Route component={ NotFound } />
     </Switch>
   )

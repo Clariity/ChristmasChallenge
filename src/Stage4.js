@@ -5,11 +5,11 @@ export default withRouter((props) => {
   const [input, setInput] = useState('')
   const [incorrect, setIncorrect] = useState()
   const [timerStarted, setTimerStarted] = useState(false)
-  const [timeLeft, setTimeLeft] = useState(20);
+  const [timeLeft, setTimeLeft] = useState(10);
 
   useEffect(() => {
     if(timerStarted) {
-      if (!timeLeft) props.history.push('/ChristmasChallenge/stage1')
+      if (!timeLeft) props.history.push('/stage1')
       const intervalId = setInterval(() => {
         setTimeLeft(timeLeft - 1);
       }, 1000);
@@ -19,7 +19,7 @@ export default withRouter((props) => {
 
   const checkPassword = () => {
     if(input === 'the 4 digits displayed on the green card in the first task') {
-      props.history.push('/ChristmasChallenge/hereIsThePasswordYouFilthyAnimal')
+      props.history.push('/hereIsThePasswordYouFilthyAnimal')
     } else {
       setIncorrect(true)
     }
@@ -29,7 +29,7 @@ export default withRouter((props) => {
     !timerStarted
     ? <div className='middle-page'>
         <p>GET READY!!!</p>
-        <p>You only have 20 seconds to enter the password on the next screen</p>
+        <p>You only have 10 seconds to enter the password on the next screen</p>
         <button className='continue-button' onClick={() => setTimerStarted(true)}>Click here when ready...</button>
       </div>
     : <div className='middle-page'>

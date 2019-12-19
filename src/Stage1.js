@@ -5,14 +5,19 @@ import { withRouter } from 'react-router-dom'
 export default withRouter((props) => {
   const [flipped, setFlipped] = useState([])
   const [loaded, setLoaded] = useState(false)
+  const [random, setRandom] = useState(1)
 
   window.history.pushState(null, null, window.location.href);
   window.onpopstate = function(event) {
     window.history.go(1);
   };
 
+  
+  console.log(random)
+
   useEffect(() => {
     setFlipped(Array(512).fill(false))
+    setRandom(Math.ceil(Math.random() * 512))
     setLoaded(true)
   }, [setFlipped])
 
@@ -28,13 +33,13 @@ export default withRouter((props) => {
         return  <ReactCardFlip key={index} isFlipped={value}>
                   <div className='card-front' onClick={() => setFlippedValue(index, true)}/>
                   <div 
-                    className={index === 313 ? 'card-back-correct' : 'card-back'} 
-                    onClick={index === 313 
-                      ? () => props.history.push('/ChristmasChallenge/youAreNotGoingToGuessTheseURLsBTW') 
+                    className={index === (random - 1) ? 'card-back-correct' : 'card-back'} 
+                    onClick={index === (random - 1) 
+                      ? () => props.history.push('/youAreNotGoingToGuessTheseURLsBTW') 
                       : () => setFlippedValue(index, false)
                     }
                   >
-                    {index === 313
+                    {index === (random - 1)
                       ? 'XKCD'
                       : index + 1
                     }

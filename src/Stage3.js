@@ -19,7 +19,7 @@ export default withRouter((props) => {
     let n = 0;
     meter.listenTo(0, (dB, percent, value) => {
       if ((Math.ceil(Math.random() * 5)) === 1)
-        level.textContent = `${Math.ceil(dB)} dB`
+        level.textContent = `Your Level: ${Math.ceil(dB)} dB`
       if (Math.ceil(dB) === target) {
         hits.textContent = `Hits: ${n++}/500`
         setTarget(-90 + Math.ceil(Math.random() * 50))
@@ -30,13 +30,14 @@ export default withRouter((props) => {
   return (
     <div className='middle-page'>
       Hit the dB levels below to complete the task
+      <p style={{"fontSize": "16px"}}>Refresh the page if it hasn't started to pick up your mic</p>
       <p>Target: {target} dB</p>
       <p id='db-level'>0 dB</p>
       <p id='hits'>Hits: 0/500</p>
       {time && 
         <>
           <p>Yeah... you've just screamed at the screen for 3 minutes for no reason</p>
-          <button className='continue-button' onClick={() => props.history.push('/ChristmasChallenge/betYouWishYouWroteThatDown')}>Continue...</button>
+          <button className='continue-button' onClick={() => props.history.push('/betYouWishYouWroteThatDown')}>Continue...</button>
         </>}
     </div>
   )

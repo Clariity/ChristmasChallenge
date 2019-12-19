@@ -65,7 +65,7 @@ export default withRouter((props) => {
         setNumber5(n)
       }} handle={handle}/>
       {checkNumber
-        ? <button className='continue-button' onClick={() => props.history.push('/ChristmasChallenge/hoorayYouMadeItToTheFinalStageWellDone')}>Continue...</button>
+        ? <button className='continue-button' onClick={() => props.history.push('/hoorayYouMadeItToTheFinalStageWellDone')}>Continue...</button>
         : <div style={{"height": "86px"}}/>}
     </div>
   )

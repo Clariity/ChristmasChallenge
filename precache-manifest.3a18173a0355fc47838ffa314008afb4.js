@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "54dfefce82ea8e8500cbc27bcd123f6c",
+    "revision": "9f1a6bc192189797c86872fccdeb35dd",
     "url": "/ChristmasChallenge/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ChristmasChallenge/static/css/2.8ff545c9.chunk.css"
   },
   {
-    "revision": "d1845fcf6615f9e3e758",
+    "revision": "65909631fd2f49e82e27",
     "url": "/ChristmasChallenge/static/css/main.101b2764.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ChristmasChallenge/static/js/2.6c583347.chunk.js.LICENSE"
   },
   {
-    "revision": "d1845fcf6615f9e3e758",
-    "url": "/ChristmasChallenge/static/js/main.e6e7e4a9.chunk.js"
+    "revision": "65909631fd2f49e82e27",
+    "url": "/ChristmasChallenge/static/js/main.b27e193c.chunk.js"
   },
   {
     "revision": "7f6408a560f6a417e112",

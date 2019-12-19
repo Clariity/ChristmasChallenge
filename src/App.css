@@ -1,38 +1,134 @@
 .App {
   text-align: center;
+  background-color: lightblue;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.middle-page {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  color: green;
+  margin: auto;
+}
+
+.start-button {
+  width: 300px;
+  height: 100px;
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(66, 32, 0);
+  color: white;
+}
+.start-button:hover {
+  cursor: pointer;
+  background-color: darkgrey;
+}
+
+.card-front {
+  width: calc(100vw / 32);
+  height: calc(100vh / 16);
+  background-color: lightblue;
+}
+.card-front:hover {
+  background-color: grey;
+}
+
+.card-back {
+  width: calc(100vw / 32);
+  height: calc(100vh / 16);
+  background-color: rgb(255, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-back-correct {
+  width: calc(100vw / 32);
+  height: calc(100vh / 16);
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stage1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: lightblue;
+}
+
+.buttons {
+  justify-content: center;
+  display: flex;
+  margin: 20px;
+}
+
+.digit-button {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+}
+
+.digit-button {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 2px solid green;
+  font-family: 'Courier New', Courier, monospace;
+}
+.digit-button:hover {
+  background-color: green;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.continue-button {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 2px solid green;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 20px;
+}
+.continue-button:hover {
+  background-color: green;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rc-slider {
+  margin: 10px;
+}
+
+.text-input {
+  width: 400px;
+  height: 50px;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  color: green;
 }
